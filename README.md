@@ -12,9 +12,9 @@ In support of blog post:
 
 * Form structure updated with Bootstrap classes.
 
-* Forms use a grid with right justifed labels.
+* Forms use the Bootstrap grid with right justifed labels.
 
-* Customizable classes added to organize further customization.
+* Classes added to organize further customization.
 
 * (Most) English language text move to a locale file.
 
