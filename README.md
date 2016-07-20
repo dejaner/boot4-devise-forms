@@ -31,7 +31,7 @@ In support of blog post:
 
 ###Version
 
-July 20, 2016: Using Devise 4.2.0 and Bootstrap 4.0.0.alpha3
+Using Devise 4.2.0 and Bootstrap 4.0.0.alpha3
 
 ###Author
 
