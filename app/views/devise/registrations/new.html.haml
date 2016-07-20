@@ -1,0 +1,43 @@
+= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+  .card.card-block.devise
+    %h4.card-title.devise= t('devise_forms.registrations.new.title')
+
+    .card-text.devise
+      = devise_error_messages!
+
+      .row.form-group
+        %label.col-sm-4.form-control-label.text-sm-right.devise{for: 'inputEmail1'}
+          = t('devise_forms.user.email')
+        .col-sm-8
+          = f.email_field :email, class: 'form-control form-control-sm',
+                                  id: 'inputEmail1',
+                                  placeholder: t('devise_forms.user.email_placeholder'),
+                                  autofocus: true
+
+      .row.form-group
+        %label.col-sm-4.form-control-label.text-sm-right.devise{for: 'inputPassword1'}
+          = t('devise_forms.user.password')
+        .col-sm-8
+          = f.password_field :password, class: 'form-control form-control-sm',
+                                        id: 'inputPassword1',
+                                        placeholder: t('devise_forms.user.new_password_placeholder'),
+                                        autocomplete: 'off'
+
+          - if @minimum_password_length
+            .help-block.devise
+              = t('devise_forms.message.minimum_password_length', min_len: @minimum_password_length)
+
+      .row.form-group
+        %label.col-sm-4.form-control-label.text-sm-right.devise{for: 'inputConfirmPassword1'}
+          = t('devise_forms.user.password_confirm')
+        .col-sm-8
+          = f.password_field :password_confirmation, class: 'form-control form-control-sm',
+                                                     id: 'inputConfirmPassword1',
+                                                     placeholder: t('devise_forms.user.password_confirm_placeholder'),
+                                                     autocomplete: 'off'
+
+      .row.form-group
+        .col-sm-offset-4.col-sm-8
+          = f.submit t('devise_forms.registrations.new.button'), class: 'btn btn-success'
+    .card-footer.text-sm-right.devise
+      = render 'devise/shared/links'

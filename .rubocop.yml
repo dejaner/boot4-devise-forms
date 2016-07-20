@@ -1,0 +1,32 @@
+require: rubocop-rspec
+
+AllCops:
+  Include:
+    - Rakefile
+    - config.ru
+    - lib/**/*.rake
+  Exclude:
+    - bin/*
+    - db/schema.rb
+    - db/migrate/*.rb
+
+Rails:
+  Enabled: true
+
+LineLength:
+  Max: 120
+
+SpaceInsideHashLiteralBraces:
+  EnforcedStyle: no_space
+
+Style/EmptyLinesAroundBlockBody:
+  Enabled: false
+
+Style/EmptyLinesAroundClassBody:
+  Enabled: false
+
+Style/EmptyLinesAroundModuleBody:
+  Enabled: false
+
+Documentation: # format too restricted
+  Enabled: false

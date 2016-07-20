@@ -1,0 +1,7 @@
+%h1 Hello World
+
+= link_to t('links.register').html_safe, new_user_registration_path
+= link_to t('links.login').html_safe, new_user_session_path
+= link_to t('links.edit_user').html_safe, edit_user_registration_path
+= link_to t('links.logout').html_safe, destroy_user_session_path, method: 'delete'
+

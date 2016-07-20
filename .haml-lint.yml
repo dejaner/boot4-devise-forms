@@ -1,0 +1,7 @@
+linters:
+  LineLength:
+    max: 120
+  ConsecutiveComments: # I disagree
+    enabled: false
+  SpaceInsideHashAttributes:
+    style: no_space

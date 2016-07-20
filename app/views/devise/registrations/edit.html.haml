@@ -1,0 +1,65 @@
+= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {method: :put}) do |f|
+  .card.card-block.devise
+    %h4.card-title.devise= t('devise_forms.registrations.edit.title', name: resource_name.to_s.humanize)
+
+    .card-text.devise
+      = devise_error_messages!
+
+      .row.form-group
+        %label.col-sm-4.form-control-label.text-sm-right.devise{for: 'inputEmail1'}
+          = t('label.email')
+        .col-sm-8
+          = f.email_field :email, class: 'form-control form-control-sm',
+                                  id: 'inputEmail1',
+                                  placeholder: t('devise_forms.user.email_placeholder'),
+                                  autofocus: true
+
+      - if resource.pending_reconfirmation?
+        .help-block.devise.text-sm-right
+          = t('devise_forms.message.waiting_confirmation', email: resource.unconfirmed_email)
+
+      .row.form-group
+        %label.col-sm-4.form-control-label.text-sm-right.devise{for: 'inputPassword1'}
+          = t('devise_forms.user.password')
+        .col-sm-8
+          = f.password_field :password, class: 'form-control form-control-sm',
+                                        id: 'inputPassword1',
+                                        placeholder: t('devise_forms.user.new_password_placeholder'),
+                                        autocomplete: 'off'
+          %span.help-block.devise
+            - if @minimum_password_length
+              = t('devise_forms.message.minimum_password_length', min_len: @minimum_password_length)
+            = t('devise_forms.message.blank_if_no_change')
+
+      .row.form-group
+        %label.col-sm-4.form-control-label.text-sm-right.devise{for: 'inputConfirmPassword1'}
+          = t('devise_forms.user.password_confirm')
+        .col-sm-8
+          = f.password_field :password_confirmation, class: 'form-control form-control-sm',
+                                                     id: 'inputConfirmPassword1',
+                                                     placeholder: t('devise_forms.user.password_confirm_placeholder'),
+                                                     autocomplete: 'off'
+
+      .row.form-group
+        %label.col-sm-4.form-control-label.text-sm-right.devise{for: 'inputCurrentPassword1'}
+          = t('devise_forms.user.current_password')
+        .col-md-8
+          = f.password_field :current_password, class: 'form-control form-control-sm',
+                                                id: 'inputCurrentPassword1',
+                                                placeholder: t('devise_forms.user.password_placeholder'),
+                                                autocomplete: 'off'
+
+          %span.help-block.devise= t('devise_forms.message.need_password_to_change')
+
+      .row.form-group
+        .col-sm-offset-4.col-sm-8
+          = f.submit t('devise_forms.registrations.edit.button'), class: 'btn btn-success'
+
+.card.card-block.devise
+  %h4.card-title.devise= t('devise_forms.registrations.cancel.title')
+  .card-text
+    %p= t('devise_forms.registrations.cancel.lead')
+    = button_to t('devise_forms.registrations.cancel.button'), registration_path(resource_name),
+                data: {confirm: 'Are you sure?'}, method: :delete, class: 'btn btn-danger'
+
+= link_to 'Back', root_url

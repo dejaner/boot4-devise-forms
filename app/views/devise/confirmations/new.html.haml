@@ -1,0 +1,20 @@
+= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: {method: :post}) do |f|
+  .card.card-block.devise
+    %h2.card-title.devise= t('devise_forms.confirmations.new.title')
+
+    .card-text.devise
+      = devise_error_messages!
+
+      .row.form-group
+        %label.col-sm-4.form-control-label.text-sm-right.devise{for: 'inputEmail1'}= t('devise_forms.user.email')
+        .col-sm-8
+          - email_field_value = resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email
+          = f.email_field :email, class: 'form-control form-control-sm',
+                                  id: 'inputEmail1',
+                                  value: email_field_value,
+                                  autofocus: true
+      .row.form-group
+        .col-sm-offset-4.col-sm-8
+          = f.submit t('devise_forms.confirmations.new.button'), class: 'btn btn-success'
+    .card-footer.text-sm-right.devise
+      = render 'devise/shared/links'
