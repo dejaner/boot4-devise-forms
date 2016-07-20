@@ -2,6 +2,10 @@
 
 The default views created by Devise converted to HAML and integrated with Bootstrap 4 styling.
 
+```
+rails generate devise:views
+```
+
 In support of blog post:
 
 ####Features:
@@ -24,6 +28,10 @@ In support of blog post:
 * assets/stylesheets/custom_devise.scss
 * config/locales/devise_forms.em.yml
 
+
+###Version
+
+July 20, 2016: Using Devise 4.2.0 and Bootstrap 4.0.0.alpha3
 
 ###Author
 
