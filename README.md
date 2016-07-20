@@ -6,7 +6,7 @@ The default views created by Devise converted to HAML and integrated with Bootst
 rails generate devise:views
 ```
 
-In support of blog post:
+In support of blog post: [Examples: Bootstrap 4 Devise Forms (using haml)](http://joanswork.com/bootstrap-4-devise-forms/)
 
 ####Features:
 
