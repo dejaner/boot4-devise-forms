@@ -16,6 +16,9 @@ Rails:
 LineLength:
   Max: 120
 
+Metrics/BlockLength:
+  Max: 28
+
 SpaceInsideHashLiteralBraces:
   EnforcedStyle: no_space
 
