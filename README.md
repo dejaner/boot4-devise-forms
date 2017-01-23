@@ -35,7 +35,7 @@ Using Devise 4.2.0 and Bootstrap 4.0.0.alpha3
 
 ###Author
 
-Joan Hughes @ [http://joanswork.com](http://joanswork.com)
+Joan Hughes @ [http://72breezy.io](http://72breezy.io)
 
 <http://www.linkedin.com/in/jehughes>
 
