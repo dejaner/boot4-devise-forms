@@ -31,7 +31,7 @@ In support of blog post: [Examples: Bootstrap 4 Devise Forms (using haml)](http:
 
 ###Version
 
-Using Devise 4.2.0 and Bootstrap 4.0.0.alpha3
+Using Devise 4.2.0 and Bootstrap 4.0.0.alpha6
 
 ###Author
 
