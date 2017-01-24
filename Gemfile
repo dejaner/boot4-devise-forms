@@ -51,4 +51,4 @@ gem 'haml'
 gem "haml-rails"
 
 gem 'devise'
-gem 'bootstrap'
+gem 'bootstrap', '4.0.0.alpha6'
