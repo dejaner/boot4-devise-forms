@@ -29,9 +29,9 @@ In support of blog post: [Examples: Bootstrap 4 Devise Forms (using haml)](https
 * config/locales/devise_forms.em.yml
 
 
-###Version
+### Version
 
-Using Devise 4.2.0 and Bootstrap 4.0.0.alpha6
+Using Devise 4.2.1 and Bootstrap 4.0.0.alpha6
 
 ### Author
 
