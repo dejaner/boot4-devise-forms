@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.8'
 # Use sqlite3 as the database for Active Record
@@ -48,7 +47,7 @@ end
 gem 'figaro'
 
 gem 'haml'
-gem "haml-rails"
+gem 'haml-rails'
 
 gem 'devise'
 gem 'bootstrap', '4.0.0.alpha6'

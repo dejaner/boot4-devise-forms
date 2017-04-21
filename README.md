@@ -1,4 +1,4 @@
-##Bootstrap 4.0 - Default Devise Views (using haml)
+## Bootstrap 4 - Default Devise Views (using haml)
 
 The default views created by Devise converted to HAML and integrated with Bootstrap 4 styling.
 
@@ -6,9 +6,9 @@ The default views created by Devise converted to HAML and integrated with Bootst
 rails generate devise:views
 ```
 
-In support of blog post: [Examples: Bootstrap 4 Devise Forms (using haml)](http://joanswork.com/bootstrap-4-devise-forms/)
+In support of blog post: [Examples: Bootstrap 4 Devise Forms (using haml)](https://joanswork.com/bootstrap-4-devise-forms/)
 
-####Features:
+#### Features:
 
 * Converted to HAML.
 
@@ -23,7 +23,7 @@ In support of blog post: [Examples: Bootstrap 4 Devise Forms (using haml)](http:
 * (Most) English language text move to a locale file.
 
 
-####Files to pay attention to:
+#### Files to pay attention to:
 * app/views/devise
 * assets/stylesheets/custom_devise.scss
 * config/locales/devise_forms.em.yml
@@ -33,12 +33,12 @@ In support of blog post: [Examples: Bootstrap 4 Devise Forms (using haml)](http:
 
 Using Devise 4.2.0 and Bootstrap 4.0.0.alpha6
 
-###Author
+### Author
 
-Joan Hughes @ [http://72breezy.io](http://72breezy.io)
+Joan Hughes @ [https://72breezy.io](https://72breezy.io)
 
 <http://www.linkedin.com/in/jehughes>
 
-###License
+### License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
 

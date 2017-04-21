@@ -33,3 +33,10 @@ Style/EmptyLinesAroundModuleBody:
 
 Documentation: # format too restricted
   Enabled: false
+
+Style/FileName:
+  Exclude:
+    - 'Gemfile'
+
+Bundler/OrderedGems:
+  Enabled: false
