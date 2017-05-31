@@ -22,13 +22,13 @@ Metrics/BlockLength:
 SpaceInsideHashLiteralBraces:
   EnforcedStyle: no_space
 
-Style/EmptyLinesAroundBlockBody:
+Layout/EmptyLinesAroundBlockBody:
   Enabled: false
 
-Style/EmptyLinesAroundClassBody:
+Layout/EmptyLinesAroundClassBody:
   Enabled: false
 
-Style/EmptyLinesAroundModuleBody:
+Layout/EmptyLinesAroundModuleBody:
   Enabled: false
 
 Documentation: # format too restricted
@@ -39,4 +39,7 @@ Style/FileName:
     - 'Gemfile'
 
 Bundler/OrderedGems:
+  Enabled: false
+
+Rails/ApplicationRecord:
   Enabled: false
