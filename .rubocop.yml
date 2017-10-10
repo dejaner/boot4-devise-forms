@@ -34,7 +34,7 @@ Layout/EmptyLinesAroundModuleBody:
 Documentation: # format too restricted
   Enabled: false
 
-Style/FileName:
+Naming/FileName:
   Exclude:
     - 'Gemfile'
 
